@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abru</title>
+</head>
+<body>
+    <p id="primeiro">paragrafo1</p>
+    <p class="teste">paragrafo 2 </p>
+    <a href="https://www.google.com">link</a>
+    <input type="text" name="descrição" id="">
+
+    <button onclick="funcao()">getElementById</button>
+    <button onclick="funcao2()">getElementById</button>
+
+    <script>
+        function funcao(){
+            let elemento = document.getElementById("priemiro");
+            console.log('id: ' + elemento.id);
+            console.log('textContent' + elemento.textContent);
+
+            elemento.textContent = 'novo texto';
+            }
+
+            function funcao2(){
+                let elementos = document.getElementsByClassName('teste');
+
+                console.log(elementos[0].textContent);
+                console.log(elementos[1].textContent);
+            }
+    </script>
+
+
+
+</body>
+</html>
